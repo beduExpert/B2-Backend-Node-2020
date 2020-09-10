@@ -1,4 +1,4 @@
-## Módulo:
+## Módulo: Backend con NodeJS.
 
 ### Objetivo
 En este módulo te sumergirás en el ecosistema NodeJS de manera gradual. 
@@ -9,6 +9,7 @@ Aprenderás a crear aplicaciones CLI y web con Javascript y también algunos de 
 
 Cualquier persona interesada en aprender temas de nivel intermedio de Javascript y NodeJS.
 No es obligatorio pero es recomendable tener una formación previa en alguna carrera de informática, un curso previo de programación o experiencia básica programando en javascript.
+
 
 ### Organización Del Módulo
 
