@@ -24,22 +24,4 @@
 
     ![Untitled.png](Untitled.png)
 
-    RESPUESTA PARA EXPERTO:
-
-    ```jsx
-    const fs = require('fs')
-    const path = require('path')
-
-    const data = fs.readFileSync(path.join(__dirname, '/ejemplo_1.txt'))
-    console.log('Número de caracteres:', data.length);
-
-    var numchars = 0, numlines = 1
-    data.map(char => {
-      if (char === 10)
-        numlines++
-      if (char === 32)
-        numchars++
-    })
-    console.log('Número de espacios:', numchars);
-    console.log('Número de líneas:', numlines);
     ```
