@@ -15,7 +15,7 @@ El desarrollo de aplicaciones para esta interfaz sigue siendo relevante, ya que 
 
 Si llevas tiempo desarrollando, ya sea frontend o backend, te habrás dado cuenta que muchos frameworks cuentan con herramientas y utilidades de línea de comandos para realizar rápidamente ciertas tareas cómo por ejemplo la inicialización de un nuevo proyecto de frontend en React o Angular. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dfee9f48-f702-40b7-8d1a-7b78c529eb66/create-react-app.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dfee9f48-f702-40b7-8d1a-7b78c529eb66/create-react-app.jpg)
+![create-react-app.jpg](create-react-app.jpg)
 
 También para correr tareas automatizadas como es el caso de grunt, gulp y otros *tasks runners* que nos liberan de tener que realizar acciones  manuales y repetitivas una y otra vez.
 
