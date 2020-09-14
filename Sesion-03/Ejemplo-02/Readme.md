@@ -94,7 +94,7 @@ Promise.all([promesa1, promesa2, promesa3]).then((valores) => {
 
 ### Ejercicio
 
-1. Crea los archivos con nombre: "archivo1.txt", "archivo2.txt", "archivo3.txt" y ""promesas.js"
+1. Crea los archivos con nombre: "archivo1.txt", "archivo2.txt", "archivo3.txt" y "promesas.js"
 2. En *archivo1.txt* copia:
 
     ```
@@ -155,5 +155,5 @@ Promise.all([promesa1, promesa2, promesa3]).then((valores) => {
 6. Ejecuta con
 
     ```bash
-    node promesesas.js
+    node promesas.js
     ```
