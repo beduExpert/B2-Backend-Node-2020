@@ -64,41 +64,96 @@ readFile("./archivo.txt")
   .catch((error) => console.error(error));
 ```
 
-### Promise.all y Promise.race
+### Promise.all
+
+Es una promesa que se cumplirá cuando toda las promesas del argumento iterable hayan sido cumplidas, o bien se rechazará cuando alguna de ellas se rechace. 
 
 ```jsx
-var fs = require("fs");
+const { values } = require("underscore");
 
-// Función de utilidad para crear una promesa por conseguir el contenido de un
-// archivo de forma asíncrona.
-var getFile = function (file) {
-  return new Promise(function (resolve, reject) {
-    fs.readFile(__dirname + "/" + file, "utf-8", function (err, data) {
-      if (err) {
-        return reject(err);
-      }
+let promesa1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, "uno");
+});
 
-      data = data.replace(/\r?\n/g, "");
+let promesa2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, "dos");
+});
 
-      resolve(data);
-    });
-  });
-};
+let promesa3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, "tres");
+});
 
-console.log("Promesas inicializadas.");
-
-var files = Promise.all([
-  getFile("archivo1.txt"),
-  getFile("archivo2.txt"),
-  getFile("archivo3.txt"),
-]);
-
-// Mostrar los archivos que fueron leídos exitosamente
-files.then(function (collection) {
-  console.log("Promesas completadas:");
-
-  collection.forEach(function (data, i) {
-    console.log("Archivo " + (i + 1) + ":", data);
-  });
+Promise.all([promesa1, promesa2, promesa3]).then((valores) => {
+  console.log(valores);
 });
 ```
+
+```bash
+[ 'uno', 'dos', 'tres' ]
+```
+
+### Ejercicio
+
+1. Crea los archivos con nombre: "archivo1.txt", "archivo2.txt", "archivo3.txt" y ""promesas.js"
+2. En *archivo1.txt* copia:
+
+    ```
+    1. «La fuerza estará ya contigo… siempre.» (Obi-Wan Kenobi a Luke Skywalker en la Estrella de la Muerte. STAR WARS, episodio IV, Una Nueva Esperanza)
+    ```
+
+3. En *archivo2.txt*, copia:
+
+    ```
+    2. «Miedo, ira, agresividad, el lado oscuro ellos son. Si algún día rigen tu vida, para siempre tu destino dominarán.» (Yoda a Luke Skywalker. STAR WARS, episodio V, El Imperio Contrataca)
+    ```
+
+4. En *archivo4.txt*, copia:
+
+    ```
+    3. «¡Tú siempre con tus “NO PUEDE HACERSE”! ¿Es que escuchándome no estabas?.» (Yoda a Luke Skywalker. STAR WARS, episodio V, El Imperio Contrataca)
+    ```
+
+5. Copia el siguiente código a *promesas.js*
+
+    ```jsx
+    let fs = require("fs");
+
+    // Función de utilidad para crear una promesa por conseguir el contenido de un
+    // archivo de forma asíncrona.
+    let obtenerArchivo = function (archivo) {
+      return new Promise(function (resolve, reject) {
+        fs.readFile(__dirname + "/" + archivo, "utf-8", function (err, datos) {
+          if (err) {
+            return reject(err);
+          }
+
+          datos = datos.replace(/\r?\n/g, "");
+
+          resolve(datos);
+        });
+      });
+    };
+
+    console.log("Promesas inicializadas.");
+
+    let files = Promise.all([
+      obtenerArchivo("archivo1.txt"),
+      obtenerArchivo("archivo2.txt"),
+      obtenerArchivo("archivo3.txt"),
+    ]);
+
+    // Mostrar los archivos que fueron leídos exitosamente
+    files.then(function (collection) {
+      console.log("Promesas completadas:");
+
+      collection.forEach(function (datos, i) {
+        console.log("Archivo " + (i + 1) + ":", datos);
+      });
+    });
+    ```
+
+6. Ejecuta con
+
+    ```bash
+    node promesesas.js
+    ```
