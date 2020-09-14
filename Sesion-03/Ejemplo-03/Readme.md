@@ -9,8 +9,6 @@ Comprender el uso de async/await como mecanismo asíncrono de Javascript
 - Instalación de Node completada
 - Conexión a internet
 
-## Desarrollo
-
 Importante: Para empezar con async/await es importante dominar callbacks y promesas, tal cual se ha visto para esta sesión
 
 ### Async/Await
@@ -27,19 +25,7 @@ El siguiente video puede ser de utilidad para comprender la idea anterior
 
 [Cómo funciona Async/Await en JavaScript](https://youtu.be/qY65YXZDyIk)
 
-Hasta este punto sabemos como funciona la asincronía y porqué es importante usarla, veamos un ejemplo:
-
-1. Creamos una promesa, pasando de callback a promesa *setTimeout()*
-
-    ```jsx
-    const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-    ```
-
-2. Creamos la siguiente función
-
-    ```jsx
-
-    ```
+Hasta este punto sabemos cómo funciona la asincronía y porqué es importante usarla.
 
 ### Declarar una función async()
 
@@ -82,3 +68,87 @@ Usando catch:
    .catch((error) => console.error(error));
  return;
 ```
+
+### Ejercicio
+
+En el siguiente ejercicio se aborda todo lo visto en la sesión es una combinación de los diferentes mecanismos de asincronía y utilizado *https* para hacer peticiones a la [PokéAPI](https://pokeapi.co/)
+
+1. Copia el siguiente código
+
+    ```jsx
+    const https = require("https");
+
+    function obtenerPokemon(pokemon) {
+      return new Promise((resolve, reject) => {
+        https
+          .get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`, (resp) => {
+            let datos = "";
+
+            resp.on("data", (chunk) => {
+              datos += chunk;
+            });
+
+            resp.on("end", () => {
+              datos = JSON.parse(JSON.stringify(datos))
+              resolve(datos);
+            });
+          })
+          .on("error", (err) => {
+            reject(err.message);
+          });
+      });
+    }
+
+    const pokemones = [
+      "bulbasur",
+      "charmader",
+      "squirtle",
+      "pidgey",
+      "pikachu",
+      "rattata",
+      "alakazam",
+      "onix",
+      "mew",
+      "wigglytuff",
+    ];
+
+    async function atraparPokemones(pokemones) {
+      try {
+        let resultados = await Promise.all(
+          pokemones.map(async (pokemon) => {
+            let resultado = await obtenerPokemon(pokemon);
+            console.log(`Pokemon atrapado ${pokemon}`);
+            return resultado;
+          })
+        );
+        return resultados
+      } catch (error) {
+        console.error("Error", error);
+      }
+    }
+
+    atraparPokemones(pokemones).then()
+    ```
+
+2. Ejecuta:
+
+    ```bash
+    node ejercicio.js
+    ```
+
+3. Resultado:
+
+    ```bash
+    Pokemon atrapado pidgey
+    Pokemon atrapado squirtle
+    Pokemon atrapado bulbasur
+    Pokemon atrapado charmader
+    Pokemon atrapado wigglytuff
+    Pokemon atrapado onix
+    Pokemon atrapado alakazam
+    Pokemon atrapado pikachu
+    Pokemon atrapado mew
+    Pokemon atrapado rattata
+    ```
+
+    El resultado puede variar ya que estamos utilizando **Promise.all** para hacer las peticiones.
