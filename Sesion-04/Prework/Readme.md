@@ -32,7 +32,7 @@ Ahora puedes sumergirte y comenzar a utilizar algunos de estos proyectos CLI:
 - Yeoman: [https://github.com/yeoman/yo](https://github.com/yeoman/yo) 
 Yeoman te permite comenzar nuevos proyectos rápido creando un "esqueleto" de manera rápida
 
-    [https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1734de21-9dc0-40bb-b70a-ab33348125ac/9402f3aa7a3ac4c1cfcdafb0f15a57b3.webp](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1734de21-9dc0-40bb-b70a-ab33348125ac/9402f3aa7a3ac4c1cfcdafb0f15a57b3.webp)
+    [9402f3aa7a3ac4c1cfcdafb0f15a57b3.webp](9402f3aa7a3ac4c1cfcdafb0f15a57b3.webp)
 
 - Angular CLI: [https://cli.angular.io/](https://cli.angular.io/)
 - Create React App: [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
