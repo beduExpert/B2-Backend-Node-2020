@@ -2,7 +2,7 @@
 
 ### Objetivos
 
-+ Conocer ejemplos hacerca del Desarrollo de Aplicaciones CLI
++ Conocer mas hacerca del Desarrollo de Aplicaciones CLI
 
 ### Desarrollo
 
