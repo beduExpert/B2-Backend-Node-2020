@@ -6,8 +6,8 @@
 
 ## Tabla de Contenidos
 
-+ El objeto process.argv
++ El objeto `process.argv`
 + El módulo readline
-+ Objeto argv
-+ El paquete inquirer.js
++ Objeto `argv`
++ El paquete inquirer.js`
 
