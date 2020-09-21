@@ -19,7 +19,7 @@ El cliente y el servidor tienen funciones completamente distintas y cada uno pue
 
 El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5bee30b9-e6f0-4162-a023-da88e81f0f99/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5bee30b9-e6f0-4162-a023-da88e81f0f99/Untitled.png)
+![Untitled.png](Untitled.png)
 
 ## Métodos de petición HTTP
 
@@ -44,11 +44,11 @@ El método TRACE realiza una prueba de bucle de retorno de mensaje a lo largo de
 - **[PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)**
 El método PATCH es utilizado para aplicar modificaciones parciales a un recurso.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63102068-5a47-41e9-8f74-1c30c2632f53/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63102068-5a47-41e9-8f74-1c30c2632f53/Untitled.png)
+![Untitled.png](Untitled.png)
 
 ## ¿Qué es **SQL?**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/47c5a582-9f5a-48f1-9109-b7bb7987be8d/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/47c5a582-9f5a-48f1-9109-b7bb7987be8d/Untitled.png)
+![Untitled3.png](Untitled3.png)
 
 SQL significa **Structured Query Language**. SQL se utiliza para **comunicarse con una base de datos.**
 
@@ -107,7 +107,7 @@ Si alguna vez has programado alguna aplicación que se conecta a una base de dat
 
 Utilizando un ORM este mapeo será automático, es más, será **independiente** de la base de datos que estés utilizando en ese momento pudiendo cambiar de motor de base de datos según tus necesidades.Veamos un ejemplo. Supongamos que tenemos una tabla de clientes. En nuestra aplicación queremos hacer las funciones básicas sobre base de datos **CRUD** (del inglés Create, Read, Update and Delete) Crear, Obtener, Actualizar y Borrar. Cada operación corresponde con una sentencia SQL.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aad57f7f-c65e-43b8-9abc-c0cfd97b9845/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aad57f7f-c65e-43b8-9abc-c0cfd97b9845/Untitled.png)
+![Untitled5.png](Untitled5.png)
 
 ## ¿Qué es un ODM?
 
