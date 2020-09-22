@@ -117,20 +117,11 @@ Dado que los documentos MongoDB son formatos similares a JSON, es posible tener 
 
 Ej: 
 
-```jsx
+```json
 {
-
-**"name"**
-
-: "John Smith",
-
-**"age"**
-
-: 20,
-
-**"email"**
-
-: "foo@example.com"
+    "name": "John Smith",
+    "age": 20,
+    "email": "foo@example.com"
 }
 ```
 
