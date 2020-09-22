@@ -34,7 +34,7 @@ Al hacer una petición a esta ruta podremos ver que nos está devolviendo inform
 
     [localhost:3000/v1/](http://localhost:3000/v1/)
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0090fc9a-4ddd-45c9-9797-6eb8a61976fb/Screen_Shot_2020-09-21_at_15.04.55.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0090fc9a-4ddd-45c9-9797-6eb8a61976fb/Screen_Shot_2020-09-21_at_15.04.55.png)
+    ![Screen_Shot_2020-09-21_at_15.04.55.png](Screen_Shot_2020-09-21_at_15.04.55.png)
 
     Es una buena práctica colocar la versión de nuestra app como una ruta principal, ya que así en un futuro si hay un cambio demasiado grande puede mantenerse funcionando ambas apis y conservar compatibilidad.
 
