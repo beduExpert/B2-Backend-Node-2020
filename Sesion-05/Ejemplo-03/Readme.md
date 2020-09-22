@@ -44,7 +44,7 @@ En los siguientes pasos crearemos el esqueleto de nuestra API para el recurso `p
 
 Los siguientes *endpoints* estarán siendo importados en el archivo `index.js` y bajo la ruta `v1/posts` de nuestra api.
 
-1. En el directorio `models/` agregamos el archivo `index.js` con el siguiente código
+1. En el directorio `routes/` agregamos el archivo `index.js` con el siguiente código
 
     ```jsx
     const express = require("express");
