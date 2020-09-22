@@ -17,7 +17,7 @@ Instalar y conocer algunas herramientas desarrolladas por terceros que nos ayuda
 
 En NodeJs el objeto `process.argv` es un objeto global que nos traerá un arreglo de cadenas que representan los argumentos que son pasados a un programa para su ejecución.
 
-- El primer elemento siempre será la ruta en la que se encuetra el ejecutable de NodeJS.
+- El primer elemento siempre será la ruta en la que se encuentra el ejecutable de NodeJS.
 - El segundo elemento será la ruta del archivo que se está ejecutando.
 - Los subsecuentes elementos son los argumentos que el usuario está enviando de manera ordenada.
 1. Crearemos un nuevo proyecto en un nuevo folder y crearemos un archivo `calculadora.js`.
@@ -65,4 +65,4 @@ Para tener una entrada asíncrona por parte del usuario cuándo nuestro código 
     });
     ```
 
-2. Analiza el comportamiento de esta línea. ¿Qué funcionalidades podremos mejorar nuestra calculadora con este función?
+2. Analiza el comportamiento de esta línea. ¿Qué funcionalidades podremos mejorar en nuestra calculadora con esta función?

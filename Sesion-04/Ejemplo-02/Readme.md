@@ -10,7 +10,7 @@ Ahora queremos que sea posible hacer sumas, restas y multiplicaciones con **mas 
 
 - Realizar los cambios pertinentes para que tu script del reto 2 funcione con yargs.
 - Realiza los cambios pertinentes para que el usuario pueda ingresar muchos datos por medio de argumentos y también por medio del menú ya realizado.
-- Procura que tu calculadora se a prueba de fallos
+- Procura que tu calculadora sea a prueba de fallos
 
     **Toma en cuenta los siguientes casos de prueba:**
 
