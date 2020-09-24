@@ -1,4 +1,4 @@
-# Ejercicio 3
+# Ejemplo 03
 
 ## Objetivo
 
@@ -23,7 +23,7 @@ Los operadores de async/await se incluyeron a partir de ECMAScript 7 para simpli
 
 El siguiente video puede ser de utilidad para comprender la idea anterior
 
-[Cómo funciona Async/Await en JavaScript](https://youtu.be/qY65YXZDyIk)
++ [Cómo funciona Async/Await en JavaScript](https://youtu.be/qY65YXZDyIk)
 
 Hasta este punto sabemos cómo funciona la asincronía y porqué es importante usarla.
 
@@ -49,7 +49,7 @@ Hasta este punto sabemos cómo funciona la asincronía y porqué es importante u
 
 Cuando usamos promesas la manera de controlar los errores es con *catch* con async/await es utilizando try/catch aunque también podemos utilizar *catch*
 
-Ejemplo:
+### Ejemplo:
 
 ```jsx
 try {
@@ -69,7 +69,7 @@ Usando catch:
  return;
 ```
 
-### Ejercicio
+### Ejemplo
 
 En el siguiente ejercicio se aborda todo lo visto en la sesión es una combinación de los diferentes mecanismos de asincronía y utilizado *https* para hacer peticiones a la [PokéAPI](https://pokeapi.co/)
 
@@ -151,4 +151,6 @@ En el siguiente ejercicio se aborda todo lo visto en la sesión es una combinaci
     Pokemon atrapado rattata
     ```
 
-    El resultado puede variar ya que estamos utilizando **Promise.all** para hacer las peticiones.
+>💡**Nota:**
+>
+>El resultado puede variar ya que estamos utilizando **Promise.all** para hacer las peticiones.
