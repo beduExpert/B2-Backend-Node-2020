@@ -29,8 +29,9 @@ Los resultados de las preguntas deberán almacenarse de manera local en un archi
 >
 >Si lo deseas puedes llenarlo para poder conocer las preguntas.
 
-### Notas
-
-+ Puedes dividir el cuestionario en varias partes para mejor legibilidad en la terminal
-+ Es suficiente con que guardes los resultados de la encuesta de manera ordenada en un folder.
-+ Puedes investigar cuántas respuestas positivas se necesitan para que sea un caso sospechoso.
+> 💡**Nota:**
+>
+>
+>+ Puedes dividir el cuestionario en varias partes para mejor legibilidad en la terminal
+>+ Es suficiente con que guardes los resultados de la encuesta de manera ordenada en un folder.
+>+ Puedes investigar cuántas respuestas positivas se necesitan para que sea un caso sospechoso.
