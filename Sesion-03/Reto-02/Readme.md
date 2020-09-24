@@ -10,7 +10,7 @@ Realiza el siguiente ejercicio como parte de lo visto en **promesas**, descrito 
 
 ### Ejemplo:
 
-La [*siguiente petición](http://swapi.dev/api/people/?page=9) tendrá los siguientes resultados:
+La [siguiente petición](http://swapi.dev/api/people/?page=9) tendrá los siguientes resultados:
 
     ```json
     {
