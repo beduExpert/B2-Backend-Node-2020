@@ -65,7 +65,7 @@ Usando catch:
  return;
 ```
 
-### Ejemplo
+### Ejemplo:
 
 En el siguiente ejercicio se aborda todo lo visto en la sesión es una combinación de los diferentes mecanismos de asincronía y utilizado *https* para hacer peticiones a la [PokéAPI](https://pokeapi.co/)
 
