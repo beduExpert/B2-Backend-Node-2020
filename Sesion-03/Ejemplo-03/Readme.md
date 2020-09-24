@@ -13,17 +13,13 @@ Importante: Para empezar con async/await es importante dominar callbacks y prome
 
 ### Async/Await
 
-Los operadores de async/await se incluyeron a partir de ECMAScript 7 para simplificar la forma de trabajar con las promesas, la finalidad es tener implementaciones aún más legibles de código, de esta forma será posible esperar por una respuesta y descartando el uso de *then* ****y *catch*
+Los operadores de async/await se incluyeron a partir de ECMAScript 7 para simplificar la forma de trabajar con las promesas, la finalidad es tener implementaciones aún más legibles de código, de esta forma será posible esperar por una respuesta y descartando el uso de **then** y **catch**
 
 **Conceptos básicos**
 
 - **async** es el operador para declarar una función
 - **await** debe ser usada dentro de la función **async**
 - La función **async** retorna una **promesa**.
-
-El siguiente video puede ser de utilidad para comprender la idea anterior
-
-+ [Cómo funciona Async/Await en JavaScript](https://youtu.be/qY65YXZDyIk)
 
 Hasta este punto sabemos cómo funciona la asincronía y porqué es importante usarla.
 
