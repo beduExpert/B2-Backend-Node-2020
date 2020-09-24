@@ -10,13 +10,13 @@ Almacenamiento suficiente y conexión a internet para instalar Nodejs.
 
 ## Desarrollo
 
-Para descargar la versión LTS de Nodejs ingresa al siguiente link [https://nodejs.org/en/download/](https://nodejs.org/en/download/) verás algo como esto:
+Para descargar la versión LTS de Nodejs ingresa al siguiente [link](https://nodejs.org/en/download/) verás algo como esto:
 
 ![Screen_Shot_2020-07-02_at_9.53.07.png](Screen_Shot_2020-07-02_at_9.53.07.png)
 
 Sigue los siguientes pasos para instalar Nodejs de acuerdo a tu sistema operativo:
 
-### Windows:
+## Windows:
 
 1. Dar click en la versión **LTS** de Nodejs.
 2. Seleccionar **Windows Installer**, esto descargará automaticamente un archivo con extensión (**.msi**).
@@ -44,10 +44,10 @@ Sigue los siguientes pasos para instalar Nodejs de acuerdo a tu sistema operativ
 
 ### Homebrew
 
-Requerimientos: Tener instalado Homebrew con la última versión en el siguiente link puedes obtener información de instalación [https://brew.sh/index_es](https://brew.sh/index_es)
+Requerimientos: Tener instalado Homebrew con la última versión en el siguiente link puedes obtener [información de instalación](https://brew.sh/index_es)
 
 1. Abrir una terminal.
-2. Ejecutar el siguiente comando 
+2. Ejecutar el siguiente comando
 
     ```bash
     brew install node
@@ -137,4 +137,6 @@ El modo REPL significa Read-Eval-Print-Loop, al entrar a este modo en Node.js, e
     nvm run node --version
     ```
 
-Nota: La instalación de Nodejs con NVM sólo es para usuarios con sistema operativo Linux y MacOs
+>💡**Nota:**
+>
+>La instalación de Nodejs con NVM sólo es para usuarios con sistema operativo Linux y MacOs
