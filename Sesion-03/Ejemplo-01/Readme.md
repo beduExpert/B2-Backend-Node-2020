@@ -1,4 +1,4 @@
-# Ejercicio 1
+# Ejemplo 01
 
 ## Objetivo
 
@@ -134,4 +134,4 @@ Si se implementará más llamadas anidadas, sin duda tenemos una problemática d
 
 El siguiente post muestra este problema ya descrito y también a cómo solucionarlo, es una guía introductoria a lo que será el resto de la sesión
 
-[Callback Hell](http://callbackhell.com/)
++ [Callback Hell](http://callbackhell.com/)
