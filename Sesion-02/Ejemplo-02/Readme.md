@@ -112,7 +112,7 @@ process.exit(0)
 
 Saber cómo es que una aplicación falló permite a los desarrolladores programar una respuesta adecuada.
 
-## Reto 2
+## Ejemplo 2.1
 
 1. Crea un script `suma.js` que reciba como argumentos dos números, los sume y luego imprima el resultado en el siguiente formato:
 
