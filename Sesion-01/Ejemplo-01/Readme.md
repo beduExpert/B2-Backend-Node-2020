@@ -98,7 +98,7 @@ El modo REPL significa Read-Eval-Print-Loop, al entrar a este modo en Node.js, e
 
 ## Instalación de Nodejs con NVM
 
-1. Abrir el siguiente link [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) para conocer el proyecto nvm
+1. Abrir el siguiente [link](https://github.com/nvm-sh/nvm) para conocer el proyecto nvm
 2. Instalar **nvm**, copiar y ejecutar en una terminal el comando **wget** o **curl**:
 
     ```bash
