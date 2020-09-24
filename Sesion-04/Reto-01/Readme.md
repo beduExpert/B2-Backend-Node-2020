@@ -18,6 +18,6 @@ Puedes mostrar un menú donde le muestras al usuario que operaciones puede hacer
 
 ### Toma en cuenta los siguientes casos de prueba:
 
-Caso 0. El usuario debe conocer las opciones que tiene a la mano. (Procura crearle un menú simple y agradable)
+**Caso 0.** El usuario debe conocer las opciones que tiene a la mano. (Procura crearle un menú simple y agradable)
 
-Caso 1. El usuario ingresa letras en lugar de números. (Crea mensajes para errores que pueden surgir con entradas no soportadas por tu programa)
+**Caso 1.** El usuario ingresa letras en lugar de números. (Crea mensajes para errores que pueden surgir con entradas no soportadas por tu programa)
