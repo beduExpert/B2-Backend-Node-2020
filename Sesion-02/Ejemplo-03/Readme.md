@@ -88,13 +88,12 @@ Explicación: Where do land and sky converge? On every horizon -- but in this ca
 
 URL: https://apod.nasa.gov/apod/image/2009/StMiMo_Hudson_960.jpg
 ```
-### Notas adicionales
+>💡**Nota:**
+>
+>Si tienes problemas obteniendo la imagen del día puede ser debido a tu zona horaria, intenta obtener las imágenes anteriores por medio del parámetro fecha de la URL. 
 
-Si tienes problemas obteniendo la imagen del día puede ser debido a tu zona horaria, intenta obtener las imágenes anteriores por medio del parámetro fecha de la URL. 
 
-Si tienes problemas obteniendo la imagen del día puede ser debido a tu zona horaria, intenta obtener las imágenes de días anteriores por medio de el parámetro fecha de la URL.
-
-Ejemplo:
+### Ejemplo:
 
 ```bash
 let today = new Date("2020-09-06")
