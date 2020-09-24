@@ -2,7 +2,7 @@
 
 ### Objetivos
 
-+ Conocer mas hacerca del Desarrollo de Aplicaciones CLI
++ Conocer más acerca del Desarrollo de Aplicaciones CLI
 
 ### Desarrollo
 
