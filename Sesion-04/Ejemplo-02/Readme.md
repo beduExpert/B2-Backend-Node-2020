@@ -73,7 +73,7 @@ Adicionalmente yargs nos permite agregar descripciones para crear un menú de ay
 
 2. Ahora podremos mostrar el menú de ayuda con el *flag* `—help`
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33b346bc-6d51-4779-b5b5-6935d876622a/Screen_Shot_2020-09-03_at_18.06.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33b346bc-6d51-4779-b5b5-6935d876622a/Screen_Shot_2020-09-03_at_18.06.09.png)
+![](http://imgfz.com/i/N8IMAez.png)
 
 3. Al pasar varios valores con la opción `-n` estos quedarán almacenados en un arreglo, así que ahora podemos operar multiples números en la propiedad `numero` del objeto `argv`
 
