@@ -4,9 +4,13 @@ Realiza el siguiente ejercicio como parte de lo visto en **promesas**, descrito 
 
 1. De la sesión *modulos esenciales* utiliza **http** para hacer una petición a "The Star Wars API"
 
-    [SWAPI](https://swapi.dev/)
++ [SWAPI](https://swapi.dev/)
 
-2. Usa la siguiente *url* para hacer una petición GET [*https://swapi.dev/api/people/?page=1/*](https://swapi.dev/api/people/). Usa el *query param **page*** para obtener diferentes personajes. Por ejemplo, la siguiente petición [*http://swapi.dev/api/people/?page=9*](http://swapi.dev/api/people/?page=9) tendrá los siguientes resultados:
+2. Usa la siguiente **url** para hacer [una petición GET](https://swapi.dev/api/people/). Usa el *query param **page*** para obtener diferentes personajes. 
+
+### Ejemplo:
+
+La [*siguiente petición](http://swapi.dev/api/people/?page=9) tendrá los siguientes resultados:
 
     ```json
     {
