@@ -44,7 +44,7 @@ Hasta ahora has hecho uso de los primeros dos. En el siguiente ejemplo trabajare
 
 Los Core Modules (módulos principales) vienen con Node.js y no necesitan ser instalados. Estos proporcionan funcionalidad de bajo nivel y métodos auxiliares. Permiten a Node.js trabajar con el sistema de archivos, redes, datos binarios, flujos de datos (streams), generar procesos externos, rutas de archivos y URLs, y realizar otras tareas útiles, como crear clientes y servidores HTTP(S).
 
-Aquí está el listado de los principales:
+Aquí está el listado de los **principales:**
 
 - `[fs](http://nodejs.org/api/fs.html)`: módulo para trabajar con el sistema de archivos.
 - `[path](http://nodejs.org/api/path.html)`: módulo para *parsear* rutas de archivos a través de distintas plataformas.
@@ -62,7 +62,7 @@ Aquí está el listado de los principales:
 
 Estos módulos no necesitan descargarse o ser instalados. 
 
-ejemplo:
+### Ejemplo:
 
 ```jsx
 const http = require('http') // reemplaza `http` con el módulo principal que quieras utilizar
@@ -72,7 +72,7 @@ const http = require('http') // reemplaza `http` con el módulo principal que qu
 
 Como Node.js está diseñado para ser multiplataforma y existen diferencias de sintaxis para leer archivos en cada plataforma, path nos permite crear rutas de archivos de manera independiente.
 
-Ejemplo.
+### Ejemplo.
 
 1. Vamos a componer una ruta para el archivo `app/server.js`
 
@@ -173,5 +173,7 @@ Y para hacerlo de manera bloqueante existen sus contrapartes:
     ![Untitled%201.png](Untitled%201.png)
 
     Ahora la ejecución será secuencial.
-
-    Es importante comprender la diferencia entre estos dos modos, ya que esto te ayudará a elegir cuál es el mejor según el problema que quieres resolver.
+    
+>💡**Nota:**
+>
+> Es importante comprender la diferencia entre estos dos modos, ya que esto te ayudará a elegir cuál es el mejor según el problema que quieres resolver.
