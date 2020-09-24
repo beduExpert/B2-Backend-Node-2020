@@ -19,7 +19,7 @@ A partir de la edición 6 (ES6) se agregaron cambios significativos con el prop�
 
 Para conocer más de este cambio entre ECMAScript 5 y ECMAScript6 consulta el siguiente artículo en el que además habla de la ediciones más recientes y la importancia de que exista está especificación:
 
-[Qué es ECMAScript](https://openwebinars.net/blog/que-es-ecmascript/)
++ [Qué es ECMAScript](https://openwebinars.net/blog/que-es-ecmascript/)
 
 ### Promesas
 
