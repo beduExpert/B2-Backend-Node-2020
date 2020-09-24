@@ -23,7 +23,8 @@ Los resultados de las preguntas deberán almacenarse de manera local en un archi
 
 **Puedes comenzar desde la siguiente pantalla**
 
-![](http://imgfz.com/i/zdTZoJg.png)
+<img src="http://imgfz.com/i/zdTZoJg.png" width="450px">
+
 
 **Si lo deseas puedes llenarlo para poder conocer las preguntas.**
 
