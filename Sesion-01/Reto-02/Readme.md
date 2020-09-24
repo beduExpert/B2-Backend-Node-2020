@@ -14,4 +14,4 @@
 
 3. Modificar la sintaxis de asteriscos para que imprima el mensaje cada 30 segundos.
 
-    La siguiente herramienta puede serte de ayuda: [https://crontab.guru/](https://crontab.guru/)
+    La siguiente [herramienta puede serte de ayuda:](https://crontab.guru/)
