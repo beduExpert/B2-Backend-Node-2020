@@ -1,7 +1,8 @@
 ## Módulo: Backend con NodeJS.
 
 ### Objetivo
-En este módulo te sumergirás en el ecosistema NodeJS de manera gradual. 
+
+En este módulo te sumergirás en el ecosistema NodeJS de manera gradual.
 Conoceras los fundamentos y los módulos nativos de  NodeJS, así como modulos de terceros para crear aplicaciones que podrán ser ejecutadas tanto en la terminal como en el servidor.
 Aprenderás a crear aplicaciones CLI y web con Javascript y también algunos de los conceptos y herramientas que han hecho crecer la popularidad de este lenguaje y la demanda de sus desarrolladores de manera acelerada.
 
