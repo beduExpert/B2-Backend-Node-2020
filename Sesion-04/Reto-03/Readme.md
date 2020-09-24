@@ -25,9 +25,7 @@ Los resultados de las preguntas deberán almacenarse de manera local en un archi
 
 ![](http://imgfz.com/i/zdTZoJg.png)
 
-> 💡**Nota:**
->
->Si lo deseas puedes llenarlo para poder conocer las preguntas.
+**Si lo deseas puedes llenarlo para poder conocer las preguntas.**
 
 > 💡**Nota:**
 >
