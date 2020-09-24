@@ -10,4 +10,4 @@
 
 **Cheerio** es un potente paquete para hacer excelente Web Scraping, una práctica interesante podría ser obtener descuentos o promociones de diferentes páginas, por ejemplo.
 
-+ [cheerio](https://www.npmjs.com/package/cheerio)
++ [Cheerio](https://www.npmjs.com/package/cheerio)
