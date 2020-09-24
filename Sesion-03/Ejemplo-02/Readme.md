@@ -92,7 +92,7 @@ Promise.all([promesa1, promesa2, promesa3]).then((valores) => {
 [ 'uno', 'dos', 'tres' ]
 ```
 
-### Ejercicio
+### Ejemplo
 
 1. Crea los archivos con nombre: "archivo1.txt", "archivo2.txt", "archivo3.txt" y "promesas.js"
 2. En *archivo1.txt* copia:
