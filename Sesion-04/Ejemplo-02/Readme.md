@@ -1,102 +1,23 @@
-# Ejemplo 2
+# Reto 02
 ## Objetivo
 
-+ Conocer algunas herramientas de terceros para desarrollar aplicaciones para la terminal.
-
-+ Aprender a utilizar las principales funcionalidades del paquete **yargs.**
-
-## Requerimientos
-
-+ NodeJS instalado y funcionando en nuestra terminal
-+ Editor de código
+- Modificar la calculadora para que permita operar con más de dos cifras.
+- Realizar pruebas al nuevo script de calculadora.
 
 ## Desarrollo
 
-El paquete [yargs](https://www.npmjs.com/package/yargs) nos provee de algunas funciones para trabajar con la línea de comandos de una manera interactiva, nos permite procesar argumentos y opciones de una manera más simple y elegante.
+Ahora queremos que sea posible hacer sumas, restas y multiplicaciones con **mas de dos operandos**. Para este reto debes hacer lo siguiente.
 
-1. Instalar yargs con el comando `npm install yargs`
-2. **Objeto argv**
+- Realizar los cambios pertinentes para que tu script del reto 2 funcione con yargs.
+- Realiza los cambios pertinentes para que el usuario pueda ingresar muchos datos por medio de argumentos y también por medio del menú ya realizado.
+- Procura que tu calculadora sea a prueba de fallos
 
-    El uso del objeto argv de yargs nos ayuda a obtener los argumentos por su nombre, ya que se almacenan como propiedades de este mismo objeto.
+    **Toma en cuenta los siguientes casos de prueba:**
 
-    ```jsx
-    const {argv} = require('yargs')
+    Caso 1. El usuario ingresa letras en lugar de números.
 
-    switch (argv.operacion) {
-        case 'suma':
-        console.log(`${argv.num1} + ${argv.num2} = ${argv.num1 + argv.num2}`)
-        break;
-      case 'resta':
-        console.log(`${argv.num1} - ${argv.num2} = ${argv.num1 - argv.num2}`)
-        break;
-      case 'multiplica':
-        console.log(`${argv.num1} * ${argv.num2} = ${argv.num1 * argv.num2}`)
-        break;
-      case 'divide':
-        console.log(`${argv.num1} / ${argv.num2} = ${argv.num1 / argv.num2}`)
-        break;
-      default:
-        break;
-    }
-    ```
+    Caso 2. El usuario mete más de dos números en la operación '`divide`'
 
-    Ahora la conversión de números es automática.
+    Caso 3. El usuario no ingresa argumentos. (Se debería ejecutar el menú interactivo)
 
-Adicionalmente yargs nos permite agregar descripciones para crear un menú de ayuda y algunas opciones adicionales para cada parámetro. También podemos añadir valores por defecto y alias de las opciones para que la entrada de argumentos sea más sencilla.
-
-### Ejemplo:
-
-1. Agregaremos lo siguiente en la primera línea de nuestro script
-
-    ```jsx
-    const yargs = require('yargs');
-
-    yargs
-    .option(
-      'operacion',
-      {
-        alias: 'o',
-        describe: 'Que operación se va a ejecutar',
-        choices: ['suma', 'resta', 'multiplica', 'divide'],
-    		default: 'suma'
-      })
-      .option('numero',
-        {
-          alias: 'n',
-          describe: 'sirve para ingresar números a operar de manera ordenada'
-        }
-      )
-      .help();
-
-    const argv = yargs.argv
-    ```
-
-2. Ahora podremos mostrar el menú de ayuda con el *flag* `—help`
-
-![](http://imgfz.com/i/N8IMAez.png)
-
-3. Al pasar varios valores con la opción `-n` estos quedarán almacenados en un arreglo, así que ahora podemos operar multiples números en la propiedad `numero` del objeto `argv`
-
-```jsx
-...
-switch (argv.operacion) {
-  case 'suma':
-    console.log(`${argv.numero[0]} + ${argv.numero[1]} = ${argv.numero[0] + argv.numero[1]}`)
-    break;
-  case 'resta':
-    console.log(`${argv.numero[0]} - ${argv.numero[1]} = ${argv.numero[0] - argv.numero[1]}`)
-    break;
-  case 'multiplica':
-    console.log(`${argv.numero[0]} * ${argv.numero[1]} = ${argv.numero[0] * argv.numero[1]}`)
-    break;
-  case 'divide':
-    console.log(`${argv.numero[0]} / ${argv.numero[1]} = ${argv.numero[0] / argv.numero[1]}`)
-    break;
-  default:
-    break;
-}
-```
-
-> 💡**Nota:**
->
->Yargs también nos permite pasar argumentos de manera posicional y también argumentos opcionales. Puedes revisar todas las opciones de esta librería en su [documentación oficial](https://github.com/yargs/yargs).
+    Caso 4. El usuario no ha ingresado argumentos necesarios para continuar.

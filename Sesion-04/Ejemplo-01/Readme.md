@@ -64,4 +64,4 @@ Para tener una entrada asíncrona por parte del usuario cuándo nuestro código 
     });
     ```
 
-2. Analiza el comportamiento de esta línea. **¿Qué funcionalidades podremos mejorar nuestra calculadora con esta función?**
+2. Analiza el comportamiento de esta línea. ¿Qué funcionalidades podremos mejorar nuestra calculadora con esta función?

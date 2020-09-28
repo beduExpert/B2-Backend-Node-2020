@@ -4,15 +4,11 @@ Realiza el siguiente ejercicio como parte de lo visto en **promesas**, descrito 
 
 1. De la sesión *modulos esenciales* utiliza **http** para hacer una petición a "The Star Wars API"
 
-+ [SWAPI](https://swapi.dev/)
+    [SWAPI](https://swapi.dev/)
 
-2. Usa la siguiente **url** para hacer [una petición GET](https://swapi.dev/api/people/). Usa el *query param **page*** para obtener diferentes personajes. 
+2. Usa la siguiente *url* para hacer una petición GET [*https://swapi.dev/api/people/?page=1/*](https://swapi.dev/api/people/). Usa el *query param **page*** para obtener diferentes personajes. Por ejemplo, la siguiente petición [*http://swapi.dev/api/people/?page=9*](http://swapi.dev/api/people/?page=9) tendrá los siguientes resultados:
 
-### Ejemplo:
-
-La [siguiente petición](http://swapi.dev/api/people/?page=9) tendrá los siguientes resultados:
-
-```json
+    ```json
     {
         "count": 82,
         "next": null,
@@ -63,7 +59,7 @@ La [siguiente petición](http://swapi.dev/api/people/?page=9) tendrá los siguie
             }
         ]
     }
- ```
+    ```
 
 3. Usa paralelismo con ayuda de promesas para obtener todas las páginas de personajes, es decir, debes hacer la petición de cada página en el mismo momento y esperar por todos los resultados.
 4. Luego de esperar por lo resultados, mezcla todos los personajes y agrupa en dos arreglos con el campo "gender" en *male* o *female*

@@ -4,9 +4,9 @@ Realiza el siguiente ejercicio como parte de lo visto con Callbacks descrito a c
 
 1. De la sesión *modulos esenciales* utiliza **http** para hacer una petición a "The Star Wars API"
 
-+ [SWAPI](https://swapi.dev/)
+    [SWAPI](https://swapi.dev/)
 
-2. Usa la siguiente **url** para hacer [una petición GET](https://swapi.dev/api/people/). Utiliza callbacks para esperar por la respuesta, obtendrás una respuesta como esta:
+2. Usa la siguiente *url* para hacer una petición GET [*https://swapi.dev/api/people/*](https://swapi.dev/api/people/). Utiliza callbacks para esperar por la respuesta, obtendrás una respuesta como esta:
 
     ```json
     {

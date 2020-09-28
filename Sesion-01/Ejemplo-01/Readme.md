@@ -6,60 +6,102 @@ Descargar e instalar la versión recomendada de Nodejs para tu sistema operativo
 
 ## Requerimientos
 
-Almacenamiento suficiente y conexión a internet para instalar Nodejs.
+
+- Sistemas operativos soportados: Windows, Mac OS X, Linux, Solaris, FreeBSD, OpenBSD, webOS  
+- Conexión a Internet
+
 
 ## Desarrollo
 
-Para descargar la versión LTS de Nodejs ingresa al siguiente [link](https://nodejs.org/en/download/) verás algo como esto:
+Node.js es un run time (entorno de ejecución) , esto significa que node.js requiere ciertos elementos para poder ejecutarse, a continuación, te damos ejemplos de como se puede realizar la instalación de estos.
 
-![Screen_Shot_2020-07-02_at_9.53.07.png](Screen_Shot_2020-07-02_at_9.53.07.png)
+<br><br>
 
-Sigue los siguientes pasos para instalar Nodejs de acuerdo a tu sistema operativo:
+# 🚀 🚀 Windows: 🚀 🚀
 
-## Windows:
 
-1. Dar click en la versión **LTS** de Nodejs.
-2. Seleccionar **Windows Installer**, esto descargará automaticamente un archivo con extensión (**.msi**).
-3. Abrir y ejecutar el archivo descargado.
-4. Seguir los pasos de instalación y configurar las preferencias de instalación.
-5. Abrir una linea de comandos de Windows y ejecutar "node"
+### PASO 1 :   
 
-    ```bash
-    node
-    ```
+Entra en el siguiente link [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-## MacOs
+Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de Windows”. 
 
-### Sitio oficial:
+![img/step1.png](img/step1.png)
 
-1. Dar click en la versión **LTS** de Nodejs.
-2. Seleccionar **macOs Installer**, esto descargará automaticamente un archivo con extensión (**.pkg**).
-3. Abrir y ejecutar el archivo descargado.
-4. Seguir los pasos de instalación y configurar las preferencias de instalación
-5. Abrir una terminal y ejecutar
 
-    ```bash
+Al hacer esto, descargara el paquete de instalación en tu computadora.
+
+![img/step2.png](img/step2.png)
+
+### PASO 2 :   
+
+Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
+
+### PASO 3 :   
+
+Una vez realizada la instalación podremos probar un comando para ver si se ha concretado con éxito.
+
+Para ello vamos a abrir la terminal, presionamos las teclas WINDOWS + R para que aparezca nuestra tarea de ejecución y escribimos en ella cmd.
+
+![img/step3.png](img/step3.png)
+
+Se abrira nuestra terminal donde podremos escribir el siguiente comando y damos enter : 
+
+
+    
     node --version
-    ```
+    
 
-### Homebrew
 
-Requerimientos: Tener instalado Homebrew con la última versión en el siguiente link puedes obtener [información de instalación](https://brew.sh/index_es)
 
-1. Abrir una terminal.
-2. Ejecutar el siguiente comando
 
-    ```bash
-    brew install node
-    ```
 
-3. Comprobar la instalación:
+y nos debera regresar la version de nuestro Node.js que acabamos de instalar.
 
-    ```bash
-    node --version
-    ```
+ <h2> Si tienes dudas, este video nos muestra como realizar la instalación, paso por paso. 🔥</h2>     
 
-## Ubuntu
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/R8moDDltHNk/0.jpg)](https://www.youtube.com/watch?v=R8moDDltHNk)
+
+<br><br>
+
+# 🌈 🌈  MacOS  🌈 🌈
+
+
+
+### PASO 1 : 
+Entra en el siguiente link [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+
+Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de MacOS. 
+
+![img/step1_mac.png](img/step1_mac.png)
+
+En la seccion de descargas encontraras un paquete con extención pkg.
+
+![img/step2_mac.png](img/step2_mac.png)
+
+### PASO 2 :
+
+Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
+
+### PASO 3 :
+
+Una vez terminada la instalacion abriremos una terminal en nuestra mac. y ejecutaremos el siguiente comando : 
+
+
+    node -v
+    
+    
+y nos debera regresar la version de nuestro Node.js que acabamos de instalar.
+
+<h2> Si tienes dudas, este video nos muestra como realizar la instalación, paso por paso.🔥 </h2>    
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TQks1p7xjdI/0.jpg)](https://www.youtube.com/watch?v=TQks1p7xjdI)
+
+
+<br><br>
+
+# 🤘🤘 Ubuntu 🤘🤘
 
 ### Usando apt
 
@@ -84,59 +126,6 @@ Requerimientos: Tener instalado Homebrew con la última versión en el siguiente
 4. Comprobar la instalación
 
     ```bash
-    nodejs -v
+    node -v
     ```
 
-### Utilizando el modo REPL
-
-El modo REPL significa Read-Eval-Print-Loop, al entrar a este modo en Node.js, en este bucle el intérprete de javascript leerá las líneas que ingresemos, evaluará las expresiones resultantes e imprimirá los resultados.
-
-1. Ejecuta el comando `node` en tu terminal
-2. ingresa expresiones en javascript y observa lo que sucede
-
-![Untitled.png](Untitled.png)
-
-## Instalación de Nodejs con NVM
-
-1. Abrir el siguiente [link](https://github.com/nvm-sh/nvm) para conocer el proyecto nvm
-2. Instalar **nvm**, copiar y ejecutar en una terminal el comando **wget** o **curl**:
-
-    ```bash
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-    ```
-
-    o
-
-    ```bash
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-    ```
-
-3. Exportar el path de instalación al **bash** para cargar nvm, agregar a nuestro archivo:
-
-    ```bash
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-    ```
-
-4. Verificar la instalación:
-
-    ```bash
-    command -v nvm
-    ```
-
-5. Descargar, compilar e instalar nodejs:
-
-    ```bash
-    nvm install node
-    ```
-
-6. Verificar la instalación:
-
-    ```bash
-    nvm run node --version
-    ```
-
->💡**Nota:**
->
->La instalación de Nodejs con NVM sólo es para usuarios con sistema operativo Linux y MacOs

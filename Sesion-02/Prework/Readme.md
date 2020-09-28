@@ -8,11 +8,9 @@ Con Node JS podemos manipular archivos de manera sencilla, ya sea **subir**, **e
 
 Igual que hacemos con otros módulos de Node, hay que procesar el correspondiente `require` para tener disponibles las funciones de acceso al sistema de ficheros. Se encuentran en el module llamado `fs` y lo vamos a importar con el siguiente código:
 
-`let fs = require('fs');`
-
-**Nota:**
-
-El nombre del objeto para operar con el sistema de archivos lo hemos guardado en una **variable** llamada `fs`. Podrías usar el nombre de variable que tú desees. Observa además que en vez de **var** estamos usando **let**, que es la forma más habitual de declarar variables en **ES6**. 
+``` jsx
+var fs = require('fs');
+```
 
 ## **Crear Archivo**
 
@@ -59,8 +57,9 @@ El método **fs.readFile()** es un método incorporado que se utiliza para leer 
 
  **Ejemplo 1:**
 
-`let fs = require('fs');`
-
+``` jsx
+var fs = require('fs');
+```
 **Sintaxis:**
 
 `fs.readFile( filename, encoding, callback_function)`

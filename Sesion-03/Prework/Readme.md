@@ -37,7 +37,7 @@ Ahí es donde entra en juego la asincronía que permite realizar largas solicitu
 
 Gracias a esta solución, *Javascript* es altamente concurrente a pesar de emplear un solo hilo.
 
-![Untitled.png](Untitled.png)
+![img/Untitled.png](img/Untitled.png)
 
 Antes de explicar como funciona el modelo de JavaScript es importante entender algunos conceptos:
 
@@ -62,13 +62,13 @@ Un **hilo** la unidad básica de **ejecución de un proceso**, cada que abres un
 
 La concurrencia es la capacidad del CPU para **ejecutar más de un proceso al mismo tiempo**.
 
-![Untitled%201.png](Untitled%201.png)
+![img/Untitled%201.png](img/Untitled%201.png)
 
 ### **Paralelismo:**
 
 El paralelismo sigue la filosofía de **divide y vencerás**, ya que consiste en tomar un único problema, y mediante concurrencia llegar a una solución más rápido. **El paralelismo lo que hace es tomar el problema inicial, dividir el problema en fracciones más pequeñas, y luego cada fracción es procesada de forma concurrente**, aprovechando al máximo la capacidad del procesador para resolver el problema.
 
-![Untitled%202.png](Untitled%202.png)
+![img/Untitled%202.png](img/Untitled%202.png)
 
 ## Bloqueante y No Bloqueante
 
@@ -168,7 +168,7 @@ Al ser *JavaScript* un lenguaje orientado a eventos, las *callbacks* son una
 
 **El temido Callback Hell o Pyramid of Doom**
 
-![Untitled%203.png](Untitled%203.png)
+![img/Untitled%203.png](img/Untitled%203.png)
 
 ```bash
 
@@ -230,7 +230,7 @@ El event loop es el que se encarga de revisar que el call stack este vacío para
 9 console.log('Hello Event Loop');
 10
 11 setTimeout(function timeout(){
-12	console.log('Hi, I'm executed')
+12	console.log("Hi, I'm executed")
 14 }, 5000)
 ```
 
@@ -244,41 +244,41 @@ El event loop es el que se encarga de revisar que el call stack este vacío para
 
 **Bueno, pasemos a explicar todo el trabajo que Nodejs hace para correr el programa que escribimos.**
 
-![Untitled%204.png](Untitled%204.png)
+![img/Untitled%204.png](img/Untitled%204.png)
 
 Primeramente, se agrega la operación **readFile** al **call stack**, debido a que es la primera del programa. Al ser una **operación asíncrona**, esta se mueve a la sección de APIs donde ahí esperaremos a que las herramientas encargadas hagan lo necesario para completar la tarea.
 
-![Untitled%205.png](Untitled%205.png)
+![img/Untitled%205.png](img/Untitled%205.png)
 
 El programa estará esperando a que el archivo termine de leerse, pero él continuará con la **ejecución del programa**. En este caso, se encuentra una **operación síncrona** (se ejecuta de manera muy rápida) que **imprime** en consola el mensaje.
 
-![Untitled%206.png](Untitled%206.png)
+![img/Untitled%206.png](img/Untitled%206.png)
 
 Ahora, vemos que la operación de **leer el archivo** terminó. Por lo tanto, pasa al **callback** **queue**. También, vemos que en el **call stack** se encuentra un **timer**. Esto porque es lo que esta después del `console.log` anterior.
 
-![Untitled%207.png](Untitled%207.png)
+![img/Untitled%207.png](img/Untitled%207.png)
 
 El **timer** posee una función llamada **timeout** que se va a ejecutar después de **5 segundos** e imprimirá en **consola** un **mensaje**. Por ello, pasa a la **sección de APIs** y espera los **5 segundos**. 
 
 Ahora, el **event loop** revisa si esta vacío el **call stack** para ejecutar el **callback** de la operación **readFile**.
 
-![Untitled%208.png](Untitled%208.png)
+![img/Untitled%208.png](img/Untitled%208.png)
 
 Al ejecutar el **callback** de la operación **readFile** nos encontramos con otra operación asíncrona. Un **timer**, con una **función llamada timeout2**, la cual se ejecutará dentro de **4 segundos**. Seguimos esperando a que pasen los **5 segundos del primer timer**.
 
-![Untitled%209.png](Untitled%209.png)
+![img/Untitled%209.png](img/Untitled%209.png)
 
 Se agrega la función **timeout2** a la sección de **APIs** a esperar que los segundos pasen.
 
-![Untitled%2010.png](Untitled%2010.png)
+![img/Untitled%2010.png](img/Untitled%2010.png)
 
 Podemos observar que la función **timeout2** ya **terminó** su tiempo. Por lo tanto, pasa al **callback queue**  y como el **call stack** no contiene ninguna operación en ejecución, lo ejecuta.
 
-![Untitled%2011.png](Untitled%2011.png)
+![img/Untitled%2011.png](img/Untitled%2011.png)
 
 Se ejecuta el **callback** de la **funcion timeout2**, el cual imprime en consola el archivo en formato **JSON**. También, vemos que la operación **timeout** culminó y se agrega al **callback** **queue**.
 
-![Untitled%2012.png](Untitled%2012.png)
+![img/Untitled%2012.png](img/Untitled%2012.png)
 
 Finalmente, el event loop vuelve a revisar el call stack y ejecuta el callback de la función que estaba en el callback queue.
 
