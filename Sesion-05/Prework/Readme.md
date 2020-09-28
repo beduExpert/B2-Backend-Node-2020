@@ -44,32 +44,17 @@ El método TRACE realiza una prueba de bucle de retorno de mensaje a lo largo de
 - **[PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)**
 El método PATCH es utilizado para aplicar modificaciones parciales a un recurso.
 
+![Untitled.png](Untitled.png)
 
 ## ¿Qué es **SQL?**
 
-**SQL -siglas de Structured Query Language**, es el lenguaje de consultas a bases de datos, que nos permitirá crear, modificar, consultar y eliminar tanto bases de datos como sus tablas y registros.
-Como todo lenguaje informático, posee su propia **sintaxis, tipos de datos y elementos.**
+![Untitled3.png](Untitled3.png)
 
-## Consultas SQL
+SQL significa **Structured Query Language**. SQL se utiliza para **comunicarse con una base de datos.**
 
-Las consultas SQL son las operaciones más comunes y esenciales del lenguaje SQL. A través de una consulta SQL, se puede buscar en la base de datos para obtener la información necesaria.
+De acuerdo con **ANSI** (American National Standards Institute), es el lenguaje estándar para sistemas de gestión de bases de datos relacionales.
 
-| Cláusula SQL  | Función | Obligatorio |
-| :--: | :--: | :--: |
-| SELECT | Muestra una lista de los campos que contienen datos de interés. | Sí |
-| FROM | Muestra las tablas que contienen los campos de la cláusula SELECT. | Sí |
-| WHERE | Especifica los criterios de campo que cada registro debe cumplir para poder ser incluido en los resultados. | NO |
-
-## Elementos del lenguaje SQL
-
-El lenguaje SQL se basa en varios elementos.
-
-Para la comodidad de los desarrolladores de SQL todos los comandos del lenguaje necesarios en los correspondientes sistemas de gestión de bases se ejecutan a través de una **interfaz específica de línea de comandos SQL** (command-line interface o CLI).
-+ **Cláusulas**: las cláusulas son componentes de los estados y las querys.
-+ **Expresiones**: las expresiones pueden producir valores escalares o tablas, que consisten en columnas y filas de datos.
-+ **Predicados**: que especifican las condiciones que se utilizan para limitar los efectos de los comandos y las consultas, o para cambiar el flujo del programa.
-+ **Querys**: una query o consulta va a recuperar los datos, en base a un criterio dado.
-+ **Comandos**: con los comandos puedes controlar las operaciones, el flujo del programa, conexiones, sesiones, o diagnósticos.
+Las sentencias SQL se utilizan para realizar tareas como actualizar datos en una base de datos o recuperar datos de una base de datos.Algunos sistemas de gestión de bases de datos relacionales comunes que utilizan SQL son: Oracle, MySQL, Microsoft SQL Server, Access, Ingres, etc.
 
 ## **Fundamentos de SQL**
 
@@ -80,16 +65,9 @@ Con SQL podemos realizar diferentes operaciones para consultar o manipular datos
 - `UPDATE`: Actualiza información de una tabla. Es, obviamente, la “U”.
 - `DELETE`: Borra filas de una tabla. Se corresponde con la “D”.
 
->💡 **Nota**
->
->Hay dos enfoques para interactuar con una base de datos:
->
->Usar el l**enguaje de consulta nativo** de las bases de datos (por ejemplo, SQL)
->Uso de un **modelo de datos de objetos** ("ODM") / **modelo relacional de objetos** ("ORM"). Un ODM / ORM representa los datos del sitio web como objetos JavaScript, que luego se asignan a la base de datos subyacente. Algunos ORM están vinculados a una base de datos específica, mientras que otros proporcionan un backend independiente de la base de datos.
-
 ## **DDL, DML y DCL**
 
-Cuando pensamos en una base de datos tenemos solemos verla como un conjunto de datos ordenados en tablas, registros e índices pero en realidad el primer paso es definir sus estructuras de datos. El lenguaje SQL permite a programadores realizar esta tarea de manera eficiente a través de un gestor de bases de datos como MySQL o PostgreSQL. Para ello SQL como estándar se estructura a su vez en 3 lenguajes independientes con las siglas **DDL, DML y DCL**.
+Cuando pensamos en una base de datos tenemos solemos verla como un conjunto de datos ordenados en tablas, registros e índices pero en realidad el primer paso es definir sus estructuras de datos. El lenguaje SQL permite a programadores realizar esta tarea de manera eficiente a través de un gestor de bases de datos como MySQL o PostgreSQL. Para ello SQL como estándar se estructura a su vez en 3 lenguajes independientes con las siglas DDL, DML y DCL.
 
 ### **Lenguaje de Definición de Datos**
 
@@ -125,7 +103,7 @@ Los comandos para controlar los permisos son los siguientes:
 
 Un ORM te permite convertir los datos de tus objectos en un formato correcto para poder guardar la información en una base de datos (**mapeo**) creándose una **base de datos virtual** donde los datos que se encuentran en nuestra aplicación, quedan **vinculados** a la base de datos (**persistencia**).
 
-Si alguna vez has programado alguna aplicación que se conecta a una base de datos, habrás podido comprobar lo laborioso que es transformar toda la información que recibes de la base datos, principalmente en tablas, en los objetos de tu aplicación y viceversa. A ésto se le denomina **mapeo**.
+Si alguna vez has programado alguna aplicación que se conecta a una base de datos, habrás podido comprobar lo laborioso que es transformar toda la información que recibes de la base datos, principalmente en tablas, en los objetos de tu aplicación y viceversa. A ésto se le denomina **mapeo**. 
 
 Utilizando un ORM este mapeo será automático, es más, será **independiente** de la base de datos que estés utilizando en ese momento pudiendo cambiar de motor de base de datos según tus necesidades.Veamos un ejemplo. Supongamos que tenemos una tabla de clientes. En nuestra aplicación queremos hacer las funciones básicas sobre base de datos **CRUD** (del inglés Create, Read, Update and Delete) Crear, Obtener, Actualizar y Borrar. Cada operación corresponde con una sentencia SQL.
 
@@ -137,7 +115,7 @@ MongoDB expresa los datos que se guardarán en un formato similar a JSON y los g
 
 Dado que los documentos MongoDB son formatos similares a JSON, es posible tener una estructura jerárquica (anidada).
 
-Ej:
+Ej: 
 
 ```json
 {

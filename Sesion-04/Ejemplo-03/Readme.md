@@ -1,128 +1,68 @@
 # Ejemplo 3
+
 ## Objetivo
 
-+ Conocer algunas herramientas de terceros para desarrollar aplicaciones para la terminal.
-+ Aprender a utilizar las principales funcionalidades del paquete **inquirer.**
+Conocer las herramientas que incluye NodeJS por defecto para realizar aplicaciones de línea de comandos. 
+
+Instalar y conocer algunas herramientas desarrolladas por terceros que nos ayudaran a desarrollar aplicaciones CLI.
 
 ## Requerimientos
 
-+ NodeJS instalado y funcionando en nuestra terminal
-+ Editor de código
+- NodeJS instalado y funcionando en nuestra terminal
+- Editor de código
 
 ## Desarrollo
 
-El módulo inquirer nos permite crear interfaces intuitivas para nuestras aplicaciones web de manera rápida.
+### El objeto `process.argv`
 
-Inquirer es utilizado en diversos paquetes importantes de la comunidad js, entre ellos están los asistentes de los tres frameworks de javascript para frontend: angular/cli, create-react-app y vue/cli.
+En NodeJs el objeto `process.argv` es un objeto global que nos traerá un arreglo de cadenas que representan los argumentos que son pasados a un programa para su ejecución.
 
-### Inquirer
-
-1. Crearemos un nuevo proyecto con un nuevo archivo  `investigador.js`
-2. Instalaremos el paquete `inquirer.js` con el comando `npm install inquirer`
-3. Agregaremos el siguiente código:
-
-    ```jsx
-    // investigador.js
-    const inquirer = require('inquirer');
-    inquirer
-      .prompt({
-        name: 'nombre',
-        message: "¿Cómo te llamas?",
-      })
-      .then(answers => {
-        console.log('Respuestas:', answers);
-      })
-    ```
-
-    El método `prompt` nos permite pasar un objeto que representa una pregunta y nos devuelve una promesa. Es el método principal del módulo inquirer.
-
-    El objeto está compuesto por distintas propiedades, pero solo necesitamos poblar la propiedad `name` y la propiedad `message` para poder tener una pregunta básica con su respectiva espera en la entrada de datos.
-
-    Utilizando el método `then` podemos tener acceso a las respuestas.
-
-3. Ejecutaremos esta primera pregunta.
-
-![](http://imgfz.com/i/ZHAhRpS.png)
-
-Cómo puedes ver al final tenemos una salida bastante simple y limpia.
-
-### Tipos de preguntas en Inquirer
-
-En inquirer contamos con distintos tipos de preguntas/respuestas, tenemos de opción multiple, lista de valores, de confirmación, checkbox, contraseña, entre otras.
-
-Los tipos de preguntas se definen con la propiedad `type`.
-
-Continuaremos con nuestro investigador añadiendo una preguntas de diversos tipos:
-
-1. En el método `prompt` pasaremos el objeto a la primera casilla de un arreglo
-2. Luego añadiremos una pregunta del tipo `list`:
-
-    ```jsx
-    const inquirer = require('inquirer');
-    inquirer
-      .prompt([{
-        name: 'nombre',
-        message: "¿Cómo te llamas?",
-      },
-      { // Nueva pregunta de opción múltiple
-        name: 'edad',
-        message: '¿Que edad tienes?',
-        type: 'list',
-        choices: [
-          '0-18',
-          '19-30',
-          '31-40',
-          '41-50',
-          '50+ '
-        ]
-      }
-      ])
-      .then(answers => {
-        console.log('Respuestas:', answers);
-      })
-      .catch(error => {
-        console.log(error);
-        if (error.isTtyError) {
-          // Prompt couldn't be rendered in the current environment
-        } else {
-          // Something else when wrong
-        }
-      });
-    ```
-
-3. Ejecutaremos el script.
-
-    ![http://imgfz.com/i/CEJBNq8.png](http://imgfz.com/i/CEJBNq8.png)
-
-    Como puedes observar ahora puedes elegir entre las 5 opciones seleccionando con el cursor.
-
-4. Con `type: 'checkbox'` también podrás realizar preguntas con múltiples soluciones.
-
-    ```jsx
-    {
-        name: 'rrss',
-        message: '¿Que redes sociales ocupas?',
-        type: 'checkbox',
-        choices: [
-          'Facebook',
-          'Instagram',
-          'Twiter',
-          'Linkedin',
-          'Tiktok'
-        ]
-      }
-    ```
-
-    ![](http://imgfz.com/i/lXNPQCA.png)
-
-    ![](http://imgfz.com/i/B3by9uH.png)
-
-5. Por último probaremos el tipo de dato password. No olvides capturar los errores de la petición `catch`.
+- El primer elemento siempre será la ruta en la que se encuentra el ejecutable de NodeJS.
+- El segundo elemento será la ruta del archivo que se está ejecutando.
+- Los subsecuentes elementos son los argumentos que el usuario está enviando de manera ordenada.
+1. Crearemos un nuevo proyecto en un nuevo folder y crearemos un archivo `calculadora.js`.
+2. Pasaremos argumentos de una manera muy similar a nuestro script `suma.js` de la sesión 2, pero esta vez el primer argumento después del nombre de nuestro script será el nombre de una operación (`suma`, `resta`, `multiplica` o `divide`), y los siguientes argumentos serán dos números a operar.
+3. Guarda el siguiente código en el archivo `calculadora.js`:
 
 ```jsx
-{
-  name: 'password',
-  message: 'Ingresa una contraseña:',
-  type: 'password'
+const tipoOperacion = process.argv[2];
+const num1 = Number(process.argv[3]);
+const num2 = Number(process.argv[4]);
+
+switch (tipoOperacion) {
+  case 'suma':
+    console.log(`${num1} + ${num2} = ${num1 + num2}`)
+    break;
+  case 'resta':
+    console.log(`${num1} - ${num2} = ${num1 - num2}`)
+    break;
+  case 'multiplica':
+    console.log(`${num1} * ${num2} = ${num1 * num2}`)
+    break;
+  case 'divide':
+    console.log(`${num1} / ${num2} = ${num1 / num2}`)
+    break;
+  default:
+    break;
 }
 ```
+
+### El módulo readline
+
+Para tener una entrada asíncrona por parte del usuario cuándo nuestro código se está ejecutando utilizaremos la siguiente línea:
+
+1. Guarda y ejecuta el siguiente código
+
+    ```jsx
+    const readline = require('readline').createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    readline.question('¿Quién eres?', name => {
+      console.log(`Hola ${name}!`);
+      readline.close();
+    });
+    ```
+
+2. Analiza el comportamiento de esta línea. ¿Qué funcionalidades podremos mejorar en nuestra calculadora con esta función?

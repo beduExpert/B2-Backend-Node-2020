@@ -34,4 +34,4 @@ Si haz trabajado lo necesario con Javascript, incluso otros lenguajes de program
 
 Esta documentación es útil para conocer todas las operaciones anteriores:
 
-+ [Array](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
+[Array](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
