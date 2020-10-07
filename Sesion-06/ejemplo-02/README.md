@@ -30,6 +30,8 @@ module.exports = {
        description: Sequelize.TEXT,
        price: Sequelize.FLOAT,
        image: Sequelize.STRING,
+       createdAt: Sequelize.DATE,
+       updatedAt: Sequelize.DATE,
      });
   },
 
@@ -59,6 +61,8 @@ module.exports = {
         },
         onDelete: 'CASCADE',
       },
+      createdAt: Sequelize.DATE,
+      updatedAt: Sequelize.DATE,
     })
   },
 
@@ -113,22 +117,33 @@ Ahora, si tu tienes alguna herramienta GUI para conectarte a tu base de datos, p
 // /models/Product.js
 const { DataTypes } = require('sequelize');
 
-export const Product = sequelize.define('products', {
+module.exports = (sequelize) => sequelize.define('products', {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   name: DataTypes.STRING,
   description: DataTypes.TEXT,
   price: DataTypes.FLOAT,
   image: DataTypes.STRING,
+  createdAt: DataTypes.DATE,
+  updatedAt: DataTypes.DATE,
+}, {
+  hooks: {
+    beforeCreate: function (produt, options, fn) {
+      produt.createdAt = new Date();
+      produt.updatedAt = new Date();
+      fn(null, produt);
+    },
+    beforeUpdate: function (produt, options, fn) {
+      produt.updatedAt = new Date();
+      fn(null, produt);
+    },
+  },
 });
-
-module.exports = (sequelize) => Product;
 ```
 ```js
 // /models/Review.js
-const { DataTypes } = require('sequelize');
-const { Product } = require('./Product.js');
+const { DataTypes, Sequelize } = require('sequelize');
 
-const Review = sequelize.define('reviews', {
+module.exports = (sequelize) => sequelize.define('reviews', {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   content: DataTypes.TEXT,
   productId: {
@@ -139,12 +154,21 @@ const Review = sequelize.define('reviews', {
     },
     onDelete: 'CASCADE',
   },
+  createdAt: DataTypes.DATE,
+  updatedAt: DataTypes.DATE,
+}, {
+  hooks: {
+    beforeCreate: function (review, options, fn) {
+      review.createdAt = new Date();
+      review.updatedAt = new Date();
+      fn(null, review);
+    },
+    beforeUpdate: function (review, options, fn) {
+      review.updatedAt = new Date();
+      fn(null, review);
+    },
+  },
 });
-
-// One-to-one relation
-Review.hasOne(Product, { foreignKey: 'productId', key: 'id' });
-
-module.exports = (sequelize) => Review;
 ```
 
 #### Conexión a la base de datos y registro de modelos
@@ -174,6 +198,10 @@ const models = [
 for (let model of models) {
   model(sequelize);
 }
+
+// Configuring relations
+const { products, reviews } = sequelize.models;
+reviews.belongsTo(products); // Relation one-to-one in reviews table
 
 module.exports = sequelize;
 ```
