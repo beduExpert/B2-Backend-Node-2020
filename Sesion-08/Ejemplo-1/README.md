@@ -91,4 +91,4 @@ module.exports = {
 ```
 
 7. Ahora, verifiquemos que todo funciona adecuadamente 🚀
-[Ir al Ejemplo #2](../example-2/README.md)
+[Ir al Ejemplo #2](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-08/Ejemplo-2)
