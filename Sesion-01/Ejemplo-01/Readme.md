@@ -27,13 +27,13 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 ![img/step1.png](img/step1.png)
 
 
--Al hacer esto, descargara el paquete de instalación en tu computadora.
+- Al hacer esto, descargara el paquete de instalación en tu computadora.
 
 ![img/step2.png](img/step2.png)
 
 ### PASO 2 :   
 
--Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
+- Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
 
 ### PASO 3 :   
 
@@ -56,7 +56,7 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 # MacOS  
 
 ### PASO 1 : 
--Entra en el siguiente [link](https://nodejs.org/en/download/)
+- Entra en el siguiente [link](https://nodejs.org/en/download/)
 -Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de MacOS. 
 
 ![img/step1_mac.png](img/step1_mac.png)
