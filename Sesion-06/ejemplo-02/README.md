@@ -109,7 +109,7 @@ Using environment "development".
 Ahora, si tu tienes alguna herramienta GUI para conectarte a tu base de datos, podrás ver que dentro ya estarán creadas las tablas.
 ![Base de Datos / Sequel Pro](./docs/database.png)
 
-[Ir al reto #2](../challenge-2/README.md)
+[Ir al reto #2](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-06/reto-02)
 
 #### Creando nuestros modelos de datos
 1. Enhorabuena! Ya hemos creado nuestras primeras tablas. Ahora toca el turno de la generación de los modelos. De acuerdo a tablas que recien hemos generado, definiremos nuestros modelos de datos utilizando Sequelize.
@@ -206,4 +206,4 @@ reviews.belongsTo(products); // Relation one-to-one in reviews table
 module.exports = sequelize;
 ```
 
-[Ir al reto #3](../challenge-3/README.md)
+[Ir al reto #3](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-06/reto-03)
