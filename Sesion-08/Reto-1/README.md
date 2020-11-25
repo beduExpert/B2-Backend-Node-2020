@@ -1,6 +1,6 @@
 # Reto #1
 ### Descripción
-En el [Ejercicio #3](../example-3/README.md) hemos visto como hacer el registro de nuestros usuarios dentro de nuestra plataforma, con esto que haz aprendido, estás listo para una implementación. Ahora, toca el turno de que desarrolles la lógica para que el usuario pueda iniciar sesión.
+En el [Ejemplo #3](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-08/Ejemplo-3) hemos visto como hacer el registro de nuestros usuarios dentro de nuestra plataforma, con esto que haz aprendido, estás listo para una implementación. Ahora, toca el turno de que desarrolles la lógica para que el usuario pueda iniciar sesión.
 
 Recuerda que los campos para iniciar sesión, son a través del `Correo Electrónico` que el usuario ha registro y su contraseña.
 
