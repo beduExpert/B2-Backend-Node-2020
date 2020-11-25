@@ -45,28 +45,19 @@ Para ello vamos a abrir la terminal, presionamos las teclas WINDOWS + R para que
 
 ![img/step3.png](img/step3.png)
 
-Se abrira nuestra terminal donde podremos escribir el siguiente comando y damos enter : 
-
-
-    
+Se abrirá nuestra terminal donde podremos escribir el siguiente comando y damos enter : 
+   
     node --version
-    
 
+y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
-
-
-
-y nos debera regresar la version de nuestro Node.js que acabamos de instalar.
-
- <h2> Si tienes dudas, este video nos muestra como realizar la instalación, paso por paso. 🔥</h2>     
+ <h2> Si tienes dudas, este video nos muestra comó realizar la instalación, paso por paso. 🔥</h2>     
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/R8moDDltHNk/0.jpg)](https://www.youtube.com/watch?v=R8moDDltHNk)
 
 <br><br>
 
-# 🌈 🌈  MacOS  🌈 🌈
-
-
+# MacOS  
 
 ### PASO 1 : 
 Entra en el siguiente link [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
@@ -76,7 +67,7 @@ Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la 
 
 ![img/step1_mac.png](img/step1_mac.png)
 
-En la seccion de descargas encontraras un paquete con extención pkg.
+En la sección de descargas encontrarás un paquete con extención pkg.
 
 ![img/step2_mac.png](img/step2_mac.png)
 
@@ -86,13 +77,13 @@ Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT 
 
 ### PASO 3 :
 
-Una vez terminada la instalacion abriremos una terminal en nuestra mac. y ejecutaremos el siguiente comando : 
+Una vez terminada la instalación abriremos una terminal en nuestra mac. y ejecutaremos el siguiente comando : 
 
 
     node -v
     
     
-y nos debera regresar la version de nuestro Node.js que acabamos de instalar.
+y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
 <h2> Si tienes dudas, este video nos muestra como realizar la instalación, paso por paso.🔥 </h2>    
 
@@ -101,7 +92,7 @@ y nos debera regresar la version de nuestro Node.js que acabamos de instalar.
 
 <br><br>
 
-# 🤘🤘 Ubuntu 🤘🤘
+# Ubuntu
 
 ### Usando apt
 
