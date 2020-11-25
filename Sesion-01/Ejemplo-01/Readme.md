@@ -45,7 +45,7 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 
 - Se abrirá nuestra terminal donde podremos escribir el siguiente comando y damos enter : 
    
-    node --version
+    `node --version`
 
 - Y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
@@ -73,7 +73,7 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 
 - Una vez terminada la instalación abriremos una terminal en nuestra mac. y ejecutaremos el siguiente comando : 
 
-    node -v
+    `node -v`
      
 - Y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
