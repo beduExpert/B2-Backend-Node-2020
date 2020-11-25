@@ -160,6 +160,6 @@ module.exports = router;
 
 Ahora es tu turno de darle funcionalidad a los modelos que haz creado de las tablas `usuarios` y `órdenes de compra`.
 
-[Ir al reto #4](../challenge-4/README.md)
+[Ir al reto #4](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-07/Reto-01)
 
 #RetaTuPotencial
