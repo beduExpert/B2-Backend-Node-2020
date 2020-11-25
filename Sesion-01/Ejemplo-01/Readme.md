@@ -20,34 +20,34 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 
 ### PASO 1 :   
 
-Entra en el siguiente [link](https://nodejs.org/en/download/)
+- Entra en el siguiente [link](https://nodejs.org/en/download/)
 
-Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de Windows”. 
+- Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja Instalador de Windows. 
 
 ![img/step1.png](img/step1.png)
 
 
-Al hacer esto, descargara el paquete de instalación en tu computadora.
+-Al hacer esto, descargara el paquete de instalación en tu computadora.
 
 ![img/step2.png](img/step2.png)
 
 ### PASO 2 :   
 
-Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
+-Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
 
 ### PASO 3 :   
 
-Una vez realizada la instalación podremos probar un comando para ver si se ha concretado con éxito.
+- Una vez realizada la instalación podremos probar un comando para ver si se ha concretado con éxito.
 
-Para ello vamos a abrir la terminal, presionamos las teclas WINDOWS + R para que aparezca nuestra tarea de ejecución y escribimos en ella cmd.
+- Para ello vamos a abrir la terminal, presionamos las teclas WINDOWS + R para que aparezca nuestra tarea de ejecución y escribimos en ella cmd.
 
 ![img/step3.png](img/step3.png)
 
-Se abrirá nuestra terminal donde podremos escribir el siguiente comando y damos enter : 
+- Se abrirá nuestra terminal donde podremos escribir el siguiente comando y damos enter : 
    
     node --version
 
-y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
+- Y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
  <h2> Si tienes dudas, este video nos muestra comó realizar la instalación, paso por paso. 🔥</h2>     
 
@@ -56,30 +56,26 @@ y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 # MacOS  
 
 ### PASO 1 : 
-Entra en el siguiente [link](https://nodejs.org/en/download/)
-
-
-Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de MacOS. 
+-Entra en el siguiente [link](https://nodejs.org/en/download/)
+-Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de MacOS. 
 
 ![img/step1_mac.png](img/step1_mac.png)
 
-En la sección de descargas encontrarás un paquete con extención pkg.
+- En la sección de descargas encontrarás un paquete con extención pkg.
 
 ![img/step2_mac.png](img/step2_mac.png)
 
 ### PASO 2 :
 
-Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
+- Ejecuta el programa de instalación, a partir de este punto darás todo en NEXT o siguiente, no te preocupes por los detalles de la instalación, cuando seas más experimentado podrás personalizarla.
 
 ### PASO 3 :
 
-Una vez terminada la instalación abriremos una terminal en nuestra mac. y ejecutaremos el siguiente comando : 
-
+- Una vez terminada la instalación abriremos una terminal en nuestra mac. y ejecutaremos el siguiente comando : 
 
     node -v
-    
-    
-y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
+     
+- Y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
 <h2> Si tienes dudas, este video nos muestra como realizar la instalación, paso por paso.🔥 </h2>    
 
