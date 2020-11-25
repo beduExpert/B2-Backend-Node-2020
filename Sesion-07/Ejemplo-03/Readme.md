@@ -100,6 +100,6 @@ module.exports = router;
 
 3. Ahora revisemos que los permisos funcionan correctamente.
 
-[Ir al reto #3](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-07/Reto-03)
+[Ir al reto #3](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-07/reto-03)
 
 #RetaTuPotencial
