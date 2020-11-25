@@ -146,6 +146,6 @@ router.post('/login', async (req, res) => {
 
 > Por ahora, estamos usando la configuración más básica de JWT, sin embargo, es importante aplicar una estrategía a través de llaves para asegurarte que los tokens están siendo generados y firmados por tu servidor. Si necesitas más información consulta la documentación del paquete JWT para Node: https://github.com/auth0/node-jsonwebtoken.
 
-[Ir al reto #1](../challenge-1/README.md)
+[Ir al reto #1](https://github.com/beduExpert/B2-Backend-Node-2020/tree/master/Sesion-07/Reto-01)
 
 #RetaTuPotencial
