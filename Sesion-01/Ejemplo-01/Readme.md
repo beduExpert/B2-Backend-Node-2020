@@ -17,7 +17,7 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 
 <br><br>
 
-# 🚀 🚀 Windows: 🚀 🚀
+# Windows: 
 
 
 ### PASO 1 :   
