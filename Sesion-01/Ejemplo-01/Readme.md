@@ -20,7 +20,7 @@ Node.js es un run time (entorno de ejecución) , esto significa que node.js requ
 
 ### PASO 1 :   
 
-Entra en el siguiente link [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+Entra en el siguiente [link](https://nodejs.org/en/download/)
 
 Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de Windows”. 
 
@@ -56,7 +56,7 @@ y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 # MacOS  
 
 ### PASO 1 : 
-Entra en el siguiente link [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+Entra en el siguiente [link](https://nodejs.org/en/download/)
 
 
 Te llevara a la sección de descargas de Node.js, una vez ahí seleccionaras la parte marcada con la flecha roja “Instalador de MacOS. 
