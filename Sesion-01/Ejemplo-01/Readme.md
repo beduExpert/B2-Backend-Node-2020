@@ -15,8 +15,6 @@ Descargar e instalar la versión recomendada de Nodejs para tu sistema operativo
 
 Node.js es un run time (entorno de ejecución) , esto significa que node.js requiere ciertos elementos para poder ejecutarse, a continuación, te damos ejemplos de como se puede realizar la instalación de estos.
 
-<br><br>
-
 # Windows: 
 
 
@@ -55,8 +53,6 @@ y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/R8moDDltHNk/0.jpg)](https://www.youtube.com/watch?v=R8moDDltHNk)
 
-<br><br>
-
 # MacOS  
 
 ### PASO 1 : 
@@ -89,9 +85,6 @@ y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TQks1p7xjdI/0.jpg)](https://www.youtube.com/watch?v=TQks1p7xjdI)
 
-
-<br><br>
-
 # Ubuntu
 
 ### Usando apt
@@ -119,4 +112,3 @@ y nos deberá regresar la versión de nuestro Node.js que acabamos de instalar.
     ```bash
     node -v
     ```
-
