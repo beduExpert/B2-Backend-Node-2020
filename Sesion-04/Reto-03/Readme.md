@@ -23,7 +23,7 @@ Puedes comenzar desde la siguiente pantalla
 
 Si lo deseas puedes llenarlo para poder conocer las preguntas.
 
-> Notas:
+> **Notas**
 >
 >- Puedes dividir el cuestionario en varias partes para mejor legibilidad en la terminal
 >- Es suficiente con que guardes los resultados de la encuesta de manera ordenada en un folder.
