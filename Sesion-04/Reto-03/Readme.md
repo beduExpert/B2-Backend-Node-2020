@@ -19,12 +19,12 @@ Puedes basarte en las preguntas del sitio web:
 
 Puedes comenzar desde la siguiente pantalla
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ba17268-7f44-4241-9945-82f6ae4c4fec/Screen_Shot_2020-09-10_at_18.43.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ba17268-7f44-4241-9945-82f6ae4c4fec/Screen_Shot_2020-09-10_at_18.43.26.png)
+<img src="./assets/coronavirus.png">
 
 Si lo deseas puedes llenarlo para poder conocer las preguntas.
 
-### Notas
-
-- Puedes dividir el cuestionario en varias partes para mejor legibilidad en la terminal
-- Es suficiente con que guardes los resultados de la encuesta de manera ordenada en un folder.
-- Puedes investigar cuántas respuestas positivas se necesitan para que sea un caso sospechoso.
+> Notas:
+>
+>- Puedes dividir el cuestionario en varias partes para mejor legibilidad en la terminal
+>- Es suficiente con que guardes los resultados de la encuesta de manera ordenada en un folder.
+>- Puedes investigar cuántas respuestas positivas se necesitan para que sea un caso sospechoso.
